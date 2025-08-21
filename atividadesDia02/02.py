@@ -1,9 +1,9 @@
-valor_produto = 50.00
-porcentagem_desconto = 20
+valorproduto = float (input("Digite o valor do produto: R$ "))
+valordesconto = float (input("Digite a porcentagem de desconto (%): "))
+valordesconto = valordesconto / 100
+preco_final = valorproduto - (valorproduto * valordesconto)
 
-desconto = (valor_produto * porcentagem_desconto) / 100
-preco_final = valor_produto - desconto
 print(f"Produto: Camiseta")
-print(f"Preço original: R$ {valor_produto:.2f}")
-print(f"Desconto: R$ {desconto:.2f}")
+print(f"Preço original: R$ {valorproduto:.2f}")
+print(f"Desconto: R$ {valordesconto:.2f}")
 print(f"Preço final: R$ {preco_final:.2f}")
